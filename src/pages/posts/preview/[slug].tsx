@@ -1,4 +1,4 @@
-import { GetStaticProps } from "next"
+import { GetStaticPaths, GetStaticProps } from "next"
 import { useSession } from "next-auth/react"
 import Head from "next/head"
 import Link from "next/link"
@@ -53,10 +53,13 @@ export default function PostPreview({ post }: PostPreviewProps) {
   )
 }
 
-export const getStaticPaths = () => {
+export const getStaticPaths: GetStaticPaths = async () => {  
   return {
+    // paths: [
+    //   { params: { slug: 'os-4-habitos-que-tornam-voce-um-programador-ineficiente' } }
+    // ],
     paths: [],
-    fallback: 'blocking'
+    fallback: 'blocking' // true, false, blocking
   }
 }
 
@@ -81,6 +84,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   return {
     props: {
       post
-    }
+    },
+    revalidate: 60 * 30 // 30min
   }
 }
