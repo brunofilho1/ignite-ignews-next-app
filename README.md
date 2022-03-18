@@ -3,11 +3,11 @@
 Ignews é um portal de notícias pago, em que você precisa se autenticar com o GitHub e se inscrever caso queira ler as postagens completas. Usando as APIs de processamento de pagamentos do Stripe, o CMS Prismic para escrever seus posts e o FaunaDB como banco de dados.
 
 <h1 align="center">
-    <img width="900px" alt="Imagem da aplicação" src=".github/ignews-home.png" />
+    <img width="900px" alt="Imagem da aplicação" src=".github/ignews-home.PNG" />
 </h1>
 
 <h1 align="center">
-    <img width="900px" alt="Listando endereços" src=".github/ignews-posts.png" />
+    <img width="900px" alt="Imagem da tela de Posts" src=".github/ignews-posts.PNG" />
 </h1>
 
 <br>
@@ -76,11 +76,11 @@ Precisa de autenticação
 ---
 
 <h1 align="center">
-    <img width="900px" alt="Listando endereços" src=".github/ignews-preview.png" />
+    <img width="900px" alt="Página com preview do post para pessoas não assinantes" src=".github/ignews-preview.PNG" />
 </h1>
 
 <h1 align="center">
-    <img width="900px" alt="Listando endereços" src=".github/stripe-checkout.png" />
+    <img width="900px" alt="Tela de checkout para pagamento do stripe" src=".github/stripe-checkout.PNG" />
 </h1>
 
 O app estará disponível no seu browser pelo endereço http://localhost:3000 assim que iniciado.
