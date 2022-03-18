@@ -57,9 +57,14 @@ $ ./stripe listen --forward-to localhost:3000/api/webhooks
 
 ```
 
+<h1 align="center">
+    <img width="900px" alt="Página com preview do post para pessoas não assinantes" src=".github/ignews-preview.PNG" />
+</h1>
+
 ---
 
 ## Cartões fakes para teste do stripe
+Qualquer endereço inserido no formulário será validado no pagamento, não necessita que seja dados reais!
 
 Pagamento bem-sucedido:
 
@@ -74,10 +79,6 @@ Precisa de autenticação
 - 4000002500003155
 
 ---
-
-<h1 align="center">
-    <img width="900px" alt="Página com preview do post para pessoas não assinantes" src=".github/ignews-preview.PNG" />
-</h1>
 
 <h1 align="center">
     <img width="900px" alt="Tela de checkout para pagamento do stripe" src=".github/stripe-checkout.PNG" />
