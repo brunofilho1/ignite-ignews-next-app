@@ -9,7 +9,7 @@ interface SubscribeButtonProps {
 }
 
 export function SubscribeButton({ priceId }: SubscribeButtonProps) {
-  const { data: session, status } = useSession()
+  const { data: session } = useSession()
   const router = useRouter();
 
   async function handleSubscribe() {
@@ -28,10 +28,11 @@ export function SubscribeButton({ priceId }: SubscribeButtonProps) {
       const response = await api.post('/subscribe')
 
       const { sessionId } = response.data;
-
+      
       const stripe = await getStripeJs();
+            
+      await stripe.redirectToCheckout({ sessionId: sessionId });
 
-      await stripe.redirectToCheckout({sessionId: sessionId});
     } catch (error) {
       alert(error.message)
     }
